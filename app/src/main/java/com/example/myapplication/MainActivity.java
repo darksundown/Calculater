@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements
         GestureDetector.OnGestureListener,
         GestureDetector.OnDoubleTapListener{
     private GestureDetectorCompat gd;
-    private int a;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
         gd = new GestureDetectorCompat(this, this);
         gd.setOnDoubleTapListener(this);
-        a = 9;
         addListen();
     }
 
